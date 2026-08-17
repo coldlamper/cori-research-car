@@ -83,6 +83,8 @@
     .product-link{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:linear-gradient(135deg,var(--primary),var(--primary-mid));color:#fff;border-radius:99px;font-size:.82rem;font-weight:700;text-decoration:none;margin-top:14px;transition:var(--transition);box-shadow:0 4px 14px rgba(59,45,139,.2)}
     .product-link:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(59,45,139,.3)}
 
+    .compare-row{cursor:pointer;transition:background .2s}
+    .compare-row:hover td{background:rgba(59,45,139,.04)}
     #top20s tbody tr:not(.detail-row){cursor:pointer;transition:background .2s}
     #top20s tbody tr:not(.detail-row):hover td{background:rgba(59,45,139,.04)}
 
@@ -277,13 +279,17 @@
         compareTbody.innerHTML='';
         compareSet.forEach(id=>{
           const v=byId[id];if(!v)return;
-          const dr=document.createElement('tr');dr.dataset.vehicleId=id;
+          const dr=document.createElement('tr');dr.dataset.vehicleId=id;dr.className='compare-row';
           dr.innerHTML='<td><b>'+v.name+'</b><br>'+v.year+' <button class="remove-btn" title="Remove from comparison">&#215;</button></td><td>'+v.type+'</td><td>'+nl2br(v.drivetrain)+'</td><td><b>'+v.power+'</b></td><td>'+nl2br(v.epa)+'</td><td>'+v.evRange+'</td><td>'+nl2br(v.size)+'</td><td>'+v.seats+'</td><td><span class="tag">'+v.fitTag+'</span><br>'+v.fitDesc+'</td>';
-          const detRow=document.createElement('tr');detRow.className='detail-row';detRow.dataset.vehicleId=id;
-          detRow.innerHTML='<td colspan="9"><details><summary>Photos &amp; details &#8212; '+v.name+'</summary><div class="detail-inner">'+detailInnerHTML(v)+'</div></details></td>';
-          compareTbody.appendChild(dr);compareTbody.appendChild(detRow);
-          wireLightbox(detRow);wireImgErrors(detRow);
-          dr.querySelector('.remove-btn').addEventListener('click',()=>{compareSet=compareSet.filter(x=>x!==id);saveState();renderComparison()});
+          compareTbody.appendChild(dr);
+          dr.querySelector('.remove-btn').addEventListener('click',e=>{e.stopPropagation();compareSet=compareSet.filter(x=>x!==id);saveState();renderComparison()});
+          dr.addEventListener('click',()=>{
+            const next=dr.nextElementSibling;
+            if(next&&next.classList.contains('detail-row')&&next.dataset.vehicleId===id){next.remove();return}
+            const detRow=document.createElement('tr');detRow.className='detail-row';detRow.dataset.vehicleId=id;
+            detRow.innerHTML='<td colspan="9"><div class="detail-inner">'+detailInnerHTML(v)+'</div></td>';
+            dr.after(detRow);wireLightbox(detRow);wireImgErrors(detRow);
+          });
         });
         updateTop20State();
         updateResetBtn();
