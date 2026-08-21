@@ -1424,7 +1424,12 @@
     "fitDesc": "Trusted midsize hybrid family SUV",
     "url": "https://www.toyota.com/highlanderhybrid",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "highlander-1.jpg",
+      "highlander-2.jpg",
+      "highlander-3.jpg",
+      "highlander-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 5
   },
@@ -1453,7 +1458,12 @@
     "fitDesc": "Premium efficient midsize SUV",
     "url": "https://www.lexus.com/models/RX",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "rx350h-1.jpg",
+      "rx350h-2.jpg",
+      "rx350h-3.jpg",
+      "rx350h-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 6
   },
@@ -1482,7 +1492,12 @@
     "fitDesc": "Hybrid-only rugged capability",
     "url": "https://www.toyota.com/landcruiser",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "land-cruiser-1.jpg",
+      "land-cruiser-2.jpg",
+      "land-cruiser-3.jpg",
+      "land-cruiser-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 12
   },
@@ -1511,7 +1526,12 @@
     "fitDesc": "Hybrid-only full-size towing SUV",
     "url": "https://www.toyota.com/sequoia",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "sequoia-1.jpg",
+      "sequoia-2.jpg",
+      "sequoia-3.jpg",
+      "sequoia-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 13
   },
@@ -1540,7 +1560,12 @@
     "fitDesc": "Rugged trail SUV, now hybrid",
     "url": "https://www.toyota.com/4runner",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "4runner-1.jpg",
+      "4runner-2.jpg",
+      "4runner-3.jpg",
+      "4runner-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 14
   },
@@ -1569,7 +1594,12 @@
     "fitDesc": "Efficient entry-luxury hybrid SUV",
     "url": "https://www.lexus.com/models/NX",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "nx350h-1.jpg",
+      "nx350h-2.jpg",
+      "nx350h-3.jpg",
+      "nx350h-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 15
   },
@@ -1598,7 +1628,12 @@
     "fitDesc": "Family-focused luxury hybrid SUV",
     "url": "https://www.lexus.com/models/TX",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "tx350h-1.jpg",
+      "tx350h-2.jpg",
+      "tx350h-3.jpg",
+      "tx350h-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 16
   },
@@ -1627,7 +1662,12 @@
     "fitDesc": "Most efficient Lexus hybrid",
     "url": "https://www.lexus.com/models/UX",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "ux250h-1.jpg",
+      "ux250h-2.jpg",
+      "ux250h-3.jpg",
+      "ux250h-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 17
   },
@@ -1656,7 +1696,12 @@
     "fitDesc": "Hybrid-only stylish crossover",
     "url": "https://www.toyota.com/venza",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "venza-1.jpg",
+      "venza-2.jpg",
+      "venza-3.jpg",
+      "venza-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 18
   },
@@ -1685,7 +1730,12 @@
     "fitDesc": "Hybrid-only crossover wagon",
     "url": "https://www.toyota.com/crownsignia",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "crown-signia-1.png",
+      "crown-signia-2.png",
+      "crown-signia-3.jpg",
+      "crown-signia-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 19
   },
@@ -1714,7 +1764,12 @@
     "fitDesc": "Most efficient hybrid SUV",
     "url": "https://www.kia.com/us/en/niro-hybrid",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "niro-1.jpg",
+      "niro-2.jpg",
+      "niro-3.jpg",
+      "niro-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 23
   },
@@ -1743,7 +1798,12 @@
     "fitDesc": "Strong 2-row luxury hybrid",
     "url": "https://www.lincoln.com/nautilus",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "nautilus-1.jpg",
+      "nautilus-2.jpg",
+      "nautilus-3.jpg",
+      "nautilus-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 24
   },
@@ -1772,7 +1832,12 @@
     "fitDesc": "Safety-focused luxury mild hybrid",
     "url": "https://www.volvocars.com/us/v/cars/xc90",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "xc90-mhev-1.jpg",
+      "xc90-mhev-2.jpg",
+      "xc90-mhev-3.jpg",
+      "xc90-mhev-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 25
   },
@@ -1801,7 +1866,12 @@
     "fitDesc": "Safety-first midsize mild hybrid",
     "url": "https://www.volvocars.com/us/v/cars/xc60",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "xc60-mhev-1.jpg",
+      "xc60-mhev-2.jpg",
+      "xc60-mhev-3.jpg",
+      "xc60-mhev-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 26
   },
@@ -1830,7 +1900,12 @@
     "fitDesc": "Powerful mild-hybrid luxury SUV",
     "url": "https://www.mbusa.com/en/vehicles/class/gle/suv",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "gle-mhev-1.jpg",
+      "gle-mhev-2.jpg",
+      "gle-mhev-3.jpg",
+      "gle-mhev-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 27
   },
@@ -1859,7 +1934,12 @@
     "fitDesc": "Understated luxury mild hybrid",
     "url": "https://www.audiusa.com/us/web/en/models/q7/q7.html",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "q7-mhev-1.jpg",
+      "q7-mhev-2.jpg",
+      "q7-mhev-3.jpg",
+      "q7-mhev-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 28
   },
@@ -1888,7 +1968,12 @@
     "fitDesc": "Athletic compact mild hybrid",
     "url": "https://www.audiusa.com/us/web/en/models/q5/q5.html",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "q5-mhev-1.jpg",
+      "q5-mhev-2.jpg",
+      "q5-mhev-3.jpg",
+      "q5-mhev-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 29
   },
@@ -1917,7 +2002,12 @@
     "fitDesc": "Driver-focused mild-hybrid SUV",
     "url": "https://www.bmwusa.com/vehicles/x-series/x5/sav.html",
     "inComparison": false,
-    "images": [],
+    "images": [
+      "x5-mhev-1.jpg",
+      "x5-mhev-2.jpg",
+      "x5-mhev-3.jpg",
+      "x5-mhev-4.jpg"
+    ],
     "top20": "hev",
     "top20Rank": 30
   }

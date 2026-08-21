@@ -83,6 +83,11 @@
     .product-link{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:linear-gradient(135deg,var(--primary),var(--primary-mid));color:#fff;border-radius:99px;font-size:.82rem;font-weight:700;text-decoration:none;margin-top:14px;transition:var(--transition);box-shadow:0 4px 14px rgba(59,45,139,.2)}
     .product-link:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(59,45,139,.3)}
 
+    th.sortable{cursor:pointer;user-select:none;transition:color .15s}
+    th.sortable:hover{color:var(--primary)}
+    th.sortable::after{content:'\2195';margin-left:6px;opacity:.35;font-size:.85em}
+    th.sortable.sort-asc::after{content:'\2191';opacity:1}
+    th.sortable.sort-desc::after{content:'\2193';opacity:1}
     .compare-row{cursor:pointer;transition:background .2s}
     .compare-row:hover td{background:rgba(59,45,139,.04)}
     #top20s tbody tr:not(.detail-row){cursor:pointer;transition:background .2s}
@@ -166,37 +171,37 @@
       </tbody></table></div><p class="note">Mileage varies with drivetrain, trim, wheel size, weather and driving. PHEV gasoline mileage is measured after usable battery charge is depleted; frequent charging can reduce gasoline use substantially.</p>
     </section>
     <section id="top20s"><div class="section-title reveal"><h2>Top 30 Hybrid SUVs</h2><p>Top-rated 2026 and 2027 hybrid and mild-hybrid SUVs, ranked by composite expert ratings. Blue rows with ★ mark vehicles from your shortlist.</p></div>
-      <div class="tablewrap reveal"><table><thead><tr><th>#</th><th>Vehicle</th><th>Starting price</th><th>HP</th><th>Combined MPG</th><th>Drivetrain</th><th>Rows</th><th>Standout</th></tr></thead><tbody>
-        <tr data-vehicle-id="rav4-hev"><td>1</td><td><b>Toyota RAV4 Hybrid</b></td><td>'26 $33,350<br><span class="note">~$463/mo</span></td><td>226 hp</td><td>38-43</td><td>FWD or AWD</td><td>2</td><td>Proven, practical hybrid SUV</td></tr>
-        <tr style="background:var(--highlight)" data-vehicle-id="crv-hev"><td>2</td><td><b>Honda CR-V Hybrid ★</b></td><td>'26 $35,630<br><span class="note">~$495/mo</span></td><td>204 hp</td><td>37-40</td><td>FWD or AWD</td><td>2</td><td>Smooth, simple all-rounder</td></tr>
-        <tr style="background:var(--highlight)" data-vehicle-id="sportage-hev"><td>3</td><td><b>Kia Sportage Hybrid ★</b></td><td>'27 $30,290<br><span class="note">~$421/mo</span></td><td>232 hp</td><td>35-41</td><td>FWD or AWD</td><td>2</td><td>Power + manageable size</td></tr>
-        <tr data-vehicle-id="tucson-hev"><td>4</td><td><b>Hyundai Tucson Hybrid</b></td><td>'26 $32,750<br><span class="note">~$455/mo</span></td><td>231 hp</td><td>36-38</td><td>FWD or AWD</td><td>2</td><td>Practical hybrid SUV</td></tr>
-        <tr data-vehicle-id="highlander-hev"><td>5</td><td><b>Toyota Highlander Hybrid</b></td><td>'26 $44,415<br><span class="note">~$617/mo</span></td><td>243 hp</td><td>35</td><td>FWD or AWD</td><td>3</td><td>Trusted midsize hybrid family SUV</td></tr>
-        <tr data-vehicle-id="rx350h-hev"><td>6</td><td><b>Lexus RX 350h</b></td><td>'26 $50,150<br><span class="note">~$697/mo</span></td><td>246 hp</td><td>36</td><td>Standard AWD</td><td>2</td><td>Premium efficient midsize SUV</td></tr>
-        <tr data-vehicle-id="grand-highlander-hev"><td>7</td><td><b>Toyota Grand Highlander Hybrid</b></td><td>'26 $46,205<br><span class="note">~$642/mo</span></td><td>245 hp</td><td>27-36</td><td>FWD or AWD</td><td>3</td><td>Spacious 3-row hybrid SUV</td></tr>
-        <tr data-vehicle-id="sorento-hev"><td>8</td><td><b>Kia Sorento Hybrid</b></td><td>'26 $40,335<br><span class="note">~$560/mo</span></td><td>227 hp</td><td>34-37</td><td>FWD or AWD</td><td>3</td><td>Affordable 3-row hybrid</td></tr>
-        <tr style="background:var(--highlight)" data-vehicle-id="santa-fe-hev"><td>9</td><td><b>Hyundai Santa Fe Hybrid ★</b></td><td>'26 $38,000<br><span class="note">~$528/mo</span></td><td>231 hp</td><td>34-36</td><td>FWD or HTRAC AWD</td><td>3</td><td>Roomier, noticeably larger</td></tr>
-        <tr style="background:var(--highlight)" data-vehicle-id="telluride-hev"><td>10</td><td><b>Kia Telluride Hybrid ★</b></td><td>'27 $48,035<br><span class="note">~$667/mo</span></td><td>329 hp</td><td>31-35</td><td>FWD or AWD</td><td>3</td><td>Powerful but big</td></tr>
-        <tr style="background:var(--highlight)" data-vehicle-id="palisade-hev"><td>11</td><td><b>Hyundai Palisade Hybrid ★</b></td><td>'27 $43,660<br><span class="note">~$606/mo</span></td><td>329 hp</td><td>30-34</td><td>FWD or HTRAC AWD</td><td>3</td><td>Quiet-luxury direction</td></tr>
-        <tr data-vehicle-id="land-cruiser-hev"><td>12</td><td><b>Toyota Land Cruiser</b></td><td>'26 $57,345<br><span class="note">~$796/mo</span></td><td>326 hp</td><td>22</td><td>Standard 4WD</td><td>2</td><td>Hybrid-only rugged capability</td></tr>
-        <tr data-vehicle-id="sequoia-hev"><td>13</td><td><b>Toyota Sequoia Hybrid</b></td><td>'26 $63,995<br><span class="note">~$889/mo</span></td><td>437 hp</td><td>22</td><td>RWD or 4WD</td><td>3</td><td>Hybrid-only full-size towing SUV</td></tr>
-        <tr data-vehicle-id="4runner-hev"><td>14</td><td><b>Toyota 4Runner Hybrid</b></td><td>'26 $48,750<br><span class="note">~$677/mo</span></td><td>326 hp</td><td>23</td><td>Standard 4WD</td><td>3</td><td>Rugged trail SUV, now hybrid</td></tr>
-        <tr data-vehicle-id="nx350h-hev"><td>15</td><td><b>Lexus NX 350h</b></td><td>'26 $46,900<br><span class="note">~$651/mo</span></td><td>240 hp</td><td>36</td><td>Standard AWD</td><td>2</td><td>Efficient entry-luxury hybrid SUV</td></tr>
-        <tr data-vehicle-id="tx350h-hev"><td>16</td><td><b>Lexus TX 350h</b></td><td>'26 $56,900<br><span class="note">~$790/mo</span></td><td>246 hp</td><td>29</td><td>Standard AWD</td><td>3</td><td>Family-focused luxury hybrid SUV</td></tr>
-        <tr data-vehicle-id="ux250h-hev"><td>17</td><td><b>Lexus UX 250h</b></td><td>'26 $37,050<br><span class="note">~$515/mo</span></td><td>181 hp</td><td>39-42</td><td>FWD or AWD</td><td>2</td><td>Most efficient Lexus hybrid</td></tr>
-        <tr data-vehicle-id="venza-hev"><td>18</td><td><b>Toyota Venza</b></td><td>'26 $36,560<br><span class="note">~$508/mo</span></td><td>219 hp</td><td>39</td><td>Standard AWD</td><td>2</td><td>Hybrid-only stylish crossover</td></tr>
-        <tr data-vehicle-id="crown-signia-hev"><td>19</td><td><b>Toyota Crown Signia</b></td><td>'26 $41,090<br><span class="note">~$571/mo</span></td><td>240 hp</td><td>39</td><td>Standard AWD</td><td>2</td><td>Hybrid-only crossover wagon</td></tr>
-        <tr data-vehicle-id="forester-hev"><td>20</td><td><b>Subaru Forester Hybrid</b></td><td>'26 $36,180<br><span class="note">~$502/mo</span></td><td>194 hp</td><td>35</td><td>Standard AWD</td><td>2</td><td>AWD utility with great MPG</td></tr>
-        <tr data-vehicle-id="corolla-cross-hev"><td>21</td><td><b>Toyota Corolla Cross Hybrid</b></td><td>'26 $30,445<br><span class="note">~$423/mo</span></td><td>196 hp</td><td>42</td><td>Standard AWD</td><td>2</td><td>Affordable, compact hybrid SUV</td></tr>
-        <tr data-vehicle-id="cx50-hev"><td>22</td><td><b>Mazda CX-50 Hybrid</b></td><td>'26 $36,345<br><span class="note">~$505/mo</span></td><td>219 hp</td><td>38</td><td>Standard AWD</td><td>2</td><td>Upscale hybrid with driving fun</td></tr>
-        <tr data-vehicle-id="niro-hev"><td>23</td><td><b>Kia Niro Hybrid</b></td><td>'26 $26,590<br><span class="note">~$369/mo</span></td><td>141 hp</td><td>53</td><td>FWD only</td><td>2</td><td>Most efficient hybrid SUV</td></tr>
-        <tr data-vehicle-id="nautilus-hev"><td>24</td><td><b>Lincoln Nautilus Hybrid</b></td><td>'26 $52,485<br><span class="note">~$729/mo</span></td><td>310 hp</td><td>30</td><td>Standard AWD</td><td>2</td><td>Strong 2-row luxury hybrid</td></tr>
-        <tr data-vehicle-id="xc90-mhev"><td>25</td><td><b>Volvo XC90 B6 Mild Hybrid</b></td><td>'26 $59,350<br><span class="note">~$824/mo</span></td><td>295 hp</td><td>24</td><td>Standard AWD</td><td>3</td><td>Safety-focused luxury mild hybrid</td></tr>
-        <tr data-vehicle-id="xc60-mhev"><td>26</td><td><b>Volvo XC60 B5 Mild Hybrid</b></td><td>'26 $47,400<br><span class="note">~$658/mo</span></td><td>247 hp</td><td>27</td><td>Standard AWD</td><td>2</td><td>Safety-first midsize mild hybrid</td></tr>
-        <tr data-vehicle-id="gle-mhev"><td>27</td><td><b>Mercedes-Benz GLE 450 4Matic</b></td><td>'26 $67,900<br><span class="note">~$943/mo</span></td><td>375 hp</td><td>22</td><td>Standard 4Matic AWD</td><td>3</td><td>Powerful mild-hybrid luxury SUV</td></tr>
-        <tr data-vehicle-id="q7-mhev"><td>28</td><td><b>Audi Q7 45 TFSI Mild Hybrid</b></td><td>'26 $61,500<br><span class="note">~$854/mo</span></td><td>261 hp</td><td>23</td><td>Standard quattro AWD</td><td>3</td><td>Understated luxury mild hybrid</td></tr>
-        <tr data-vehicle-id="q5-mhev"><td>29</td><td><b>Audi Q5 45 TFSI Mild Hybrid</b></td><td>'26 $46,100<br><span class="note">~$640/mo</span></td><td>261 hp</td><td>25</td><td>Standard quattro AWD</td><td>2</td><td>Athletic compact mild hybrid</td></tr>
-        <tr data-vehicle-id="x5-mhev"><td>30</td><td><b>BMW X5 xDrive40i</b></td><td>'26 $68,400<br><span class="note">~$950/mo</span></td><td>375 hp</td><td>24</td><td>Standard xDrive AWD</td><td>3</td><td>Driver-focused mild-hybrid SUV</td></tr>
+      <div class="tablewrap reveal"><table id="top30-table"><thead><tr><th>#</th><th>Vehicle</th><th class="sortable" data-sort="price">Starting price</th><th>HP</th><th class="sortable" data-sort="mpg">Combined MPG</th><th>Drivetrain</th><th>Rows</th><th>Standout</th></tr></thead><tbody>
+        <tr data-vehicle-id="rav4-hev" data-price="33350" data-mpg="40.5"><td>1</td><td><b>Toyota RAV4 Hybrid</b></td><td>'26 $33,350<br><span class="note">~$463/mo</span></td><td>226 hp</td><td>38-43</td><td>FWD or AWD</td><td>2</td><td>Proven, practical hybrid SUV</td></tr>
+        <tr style="background:var(--highlight)" data-vehicle-id="crv-hev" data-price="35630" data-mpg="38.5"><td>2</td><td><b>Honda CR-V Hybrid ★</b></td><td>'26 $35,630<br><span class="note">~$495/mo</span></td><td>204 hp</td><td>37-40</td><td>FWD or AWD</td><td>2</td><td>Smooth, simple all-rounder</td></tr>
+        <tr style="background:var(--highlight)" data-vehicle-id="sportage-hev" data-price="30290" data-mpg="38.0"><td>3</td><td><b>Kia Sportage Hybrid ★</b></td><td>'27 $30,290<br><span class="note">~$421/mo</span></td><td>232 hp</td><td>35-41</td><td>FWD or AWD</td><td>2</td><td>Power + manageable size</td></tr>
+        <tr data-vehicle-id="tucson-hev" data-price="32750" data-mpg="37.0"><td>4</td><td><b>Hyundai Tucson Hybrid</b></td><td>'26 $32,750<br><span class="note">~$455/mo</span></td><td>231 hp</td><td>36-38</td><td>FWD or AWD</td><td>2</td><td>Practical hybrid SUV</td></tr>
+        <tr data-vehicle-id="highlander-hev" data-price="44415" data-mpg="35.0"><td>5</td><td><b>Toyota Highlander Hybrid</b></td><td>'26 $44,415<br><span class="note">~$617/mo</span></td><td>243 hp</td><td>35</td><td>FWD or AWD</td><td>3</td><td>Trusted midsize hybrid family SUV</td></tr>
+        <tr data-vehicle-id="rx350h-hev" data-price="50150" data-mpg="36.0"><td>6</td><td><b>Lexus RX 350h</b></td><td>'26 $50,150<br><span class="note">~$697/mo</span></td><td>246 hp</td><td>36</td><td>Standard AWD</td><td>2</td><td>Premium efficient midsize SUV</td></tr>
+        <tr data-vehicle-id="grand-highlander-hev" data-price="46205" data-mpg="31.5"><td>7</td><td><b>Toyota Grand Highlander Hybrid</b></td><td>'26 $46,205<br><span class="note">~$642/mo</span></td><td>245 hp</td><td>27-36</td><td>FWD or AWD</td><td>3</td><td>Spacious 3-row hybrid SUV</td></tr>
+        <tr data-vehicle-id="sorento-hev" data-price="40335" data-mpg="35.5"><td>8</td><td><b>Kia Sorento Hybrid</b></td><td>'26 $40,335<br><span class="note">~$560/mo</span></td><td>227 hp</td><td>34-37</td><td>FWD or AWD</td><td>3</td><td>Affordable 3-row hybrid</td></tr>
+        <tr style="background:var(--highlight)" data-vehicle-id="santa-fe-hev" data-price="38000" data-mpg="35.0"><td>9</td><td><b>Hyundai Santa Fe Hybrid ★</b></td><td>'26 $38,000<br><span class="note">~$528/mo</span></td><td>231 hp</td><td>34-36</td><td>FWD or HTRAC AWD</td><td>3</td><td>Roomier, noticeably larger</td></tr>
+        <tr style="background:var(--highlight)" data-vehicle-id="telluride-hev" data-price="48035" data-mpg="33.0"><td>10</td><td><b>Kia Telluride Hybrid ★</b></td><td>'27 $48,035<br><span class="note">~$667/mo</span></td><td>329 hp</td><td>31-35</td><td>FWD or AWD</td><td>3</td><td>Powerful but big</td></tr>
+        <tr style="background:var(--highlight)" data-vehicle-id="palisade-hev" data-price="43660" data-mpg="32.0"><td>11</td><td><b>Hyundai Palisade Hybrid ★</b></td><td>'27 $43,660<br><span class="note">~$606/mo</span></td><td>329 hp</td><td>30-34</td><td>FWD or HTRAC AWD</td><td>3</td><td>Quiet-luxury direction</td></tr>
+        <tr data-vehicle-id="land-cruiser-hev" data-price="57345" data-mpg="22.0"><td>12</td><td><b>Toyota Land Cruiser</b></td><td>'26 $57,345<br><span class="note">~$796/mo</span></td><td>326 hp</td><td>22</td><td>Standard 4WD</td><td>2</td><td>Hybrid-only rugged capability</td></tr>
+        <tr data-vehicle-id="sequoia-hev" data-price="63995" data-mpg="22.0"><td>13</td><td><b>Toyota Sequoia Hybrid</b></td><td>'26 $63,995<br><span class="note">~$889/mo</span></td><td>437 hp</td><td>22</td><td>RWD or 4WD</td><td>3</td><td>Hybrid-only full-size towing SUV</td></tr>
+        <tr data-vehicle-id="4runner-hev" data-price="48750" data-mpg="23.0"><td>14</td><td><b>Toyota 4Runner Hybrid</b></td><td>'26 $48,750<br><span class="note">~$677/mo</span></td><td>326 hp</td><td>23</td><td>Standard 4WD</td><td>3</td><td>Rugged trail SUV, now hybrid</td></tr>
+        <tr data-vehicle-id="nx350h-hev" data-price="46900" data-mpg="36.0"><td>15</td><td><b>Lexus NX 350h</b></td><td>'26 $46,900<br><span class="note">~$651/mo</span></td><td>240 hp</td><td>36</td><td>Standard AWD</td><td>2</td><td>Efficient entry-luxury hybrid SUV</td></tr>
+        <tr data-vehicle-id="tx350h-hev" data-price="56900" data-mpg="29.0"><td>16</td><td><b>Lexus TX 350h</b></td><td>'26 $56,900<br><span class="note">~$790/mo</span></td><td>246 hp</td><td>29</td><td>Standard AWD</td><td>3</td><td>Family-focused luxury hybrid SUV</td></tr>
+        <tr data-vehicle-id="ux250h-hev" data-price="37050" data-mpg="40.5"><td>17</td><td><b>Lexus UX 250h</b></td><td>'26 $37,050<br><span class="note">~$515/mo</span></td><td>181 hp</td><td>39-42</td><td>FWD or AWD</td><td>2</td><td>Most efficient Lexus hybrid</td></tr>
+        <tr data-vehicle-id="venza-hev" data-price="36560" data-mpg="39.0"><td>18</td><td><b>Toyota Venza</b></td><td>'26 $36,560<br><span class="note">~$508/mo</span></td><td>219 hp</td><td>39</td><td>Standard AWD</td><td>2</td><td>Hybrid-only stylish crossover</td></tr>
+        <tr data-vehicle-id="crown-signia-hev" data-price="41090" data-mpg="39.0"><td>19</td><td><b>Toyota Crown Signia</b></td><td>'26 $41,090<br><span class="note">~$571/mo</span></td><td>240 hp</td><td>39</td><td>Standard AWD</td><td>2</td><td>Hybrid-only crossover wagon</td></tr>
+        <tr data-vehicle-id="forester-hev" data-price="36180" data-mpg="35.0"><td>20</td><td><b>Subaru Forester Hybrid</b></td><td>'26 $36,180<br><span class="note">~$502/mo</span></td><td>194 hp</td><td>35</td><td>Standard AWD</td><td>2</td><td>AWD utility with great MPG</td></tr>
+        <tr data-vehicle-id="corolla-cross-hev" data-price="30445" data-mpg="42.0"><td>21</td><td><b>Toyota Corolla Cross Hybrid</b></td><td>'26 $30,445<br><span class="note">~$423/mo</span></td><td>196 hp</td><td>42</td><td>Standard AWD</td><td>2</td><td>Affordable, compact hybrid SUV</td></tr>
+        <tr data-vehicle-id="cx50-hev" data-price="36345" data-mpg="38.0"><td>22</td><td><b>Mazda CX-50 Hybrid</b></td><td>'26 $36,345<br><span class="note">~$505/mo</span></td><td>219 hp</td><td>38</td><td>Standard AWD</td><td>2</td><td>Upscale hybrid with driving fun</td></tr>
+        <tr data-vehicle-id="niro-hev" data-price="26590" data-mpg="53.0"><td>23</td><td><b>Kia Niro Hybrid</b></td><td>'26 $26,590<br><span class="note">~$369/mo</span></td><td>141 hp</td><td>53</td><td>FWD only</td><td>2</td><td>Most efficient hybrid SUV</td></tr>
+        <tr data-vehicle-id="nautilus-hev" data-price="52485" data-mpg="30.0"><td>24</td><td><b>Lincoln Nautilus Hybrid</b></td><td>'26 $52,485<br><span class="note">~$729/mo</span></td><td>310 hp</td><td>30</td><td>Standard AWD</td><td>2</td><td>Strong 2-row luxury hybrid</td></tr>
+        <tr data-vehicle-id="xc90-mhev" data-price="59350" data-mpg="24.0"><td>25</td><td><b>Volvo XC90 B6 Mild Hybrid</b></td><td>'26 $59,350<br><span class="note">~$824/mo</span></td><td>295 hp</td><td>24</td><td>Standard AWD</td><td>3</td><td>Safety-focused luxury mild hybrid</td></tr>
+        <tr data-vehicle-id="xc60-mhev" data-price="47400" data-mpg="27.0"><td>26</td><td><b>Volvo XC60 B5 Mild Hybrid</b></td><td>'26 $47,400<br><span class="note">~$658/mo</span></td><td>247 hp</td><td>27</td><td>Standard AWD</td><td>2</td><td>Safety-first midsize mild hybrid</td></tr>
+        <tr data-vehicle-id="gle-mhev" data-price="67900" data-mpg="22.0"><td>27</td><td><b>Mercedes-Benz GLE 450 4Matic</b></td><td>'26 $67,900<br><span class="note">~$943/mo</span></td><td>375 hp</td><td>22</td><td>Standard 4Matic AWD</td><td>3</td><td>Powerful mild-hybrid luxury SUV</td></tr>
+        <tr data-vehicle-id="q7-mhev" data-price="61500" data-mpg="23.0"><td>28</td><td><b>Audi Q7 45 TFSI Mild Hybrid</b></td><td>'26 $61,500<br><span class="note">~$854/mo</span></td><td>261 hp</td><td>23</td><td>Standard quattro AWD</td><td>3</td><td>Understated luxury mild hybrid</td></tr>
+        <tr data-vehicle-id="q5-mhev" data-price="46100" data-mpg="25.0"><td>29</td><td><b>Audi Q5 45 TFSI Mild Hybrid</b></td><td>'26 $46,100<br><span class="note">~$640/mo</span></td><td>261 hp</td><td>25</td><td>Standard quattro AWD</td><td>2</td><td>Athletic compact mild hybrid</td></tr>
+        <tr data-vehicle-id="x5-mhev" data-price="68400" data-mpg="24.0"><td>30</td><td><b>BMW X5 xDrive40i</b></td><td>'26 $68,400<br><span class="note">~$950/mo</span></td><td>375 hp</td><td>24</td><td>Standard xDrive AWD</td><td>3</td><td>Driver-focused mild-hybrid SUV</td></tr>
       </tbody></table></div>
       <p class="note">Composite of expert ratings from KBB, U.S. News, Edmunds, Cars.com and Consumer Reports. SUVs only — sedans, hatchbacks and trucks excluded. Model year shown is the one currently priced; Sportage, Telluride and Palisade Hybrid are all-new for '27 with no separate '26 pricing. Prices include destination but exclude tax, title and fees. Estimated monthly payment assumes 0% APR financing over 72 months on the starting price with no down payment — an illustration only, not a loan offer.</p>
     </section>
@@ -306,7 +311,28 @@
         });
       }
 
+      function setupSort(table){
+        const tbody=table.querySelector('tbody');
+        const headers=table.querySelectorAll('thead th.sortable');
+        headers.forEach(th=>{
+          th.addEventListener('click',()=>{
+            const key=th.dataset.sort;
+            const asc=!th.classList.contains('sort-asc');
+            headers.forEach(h=>h.classList.remove('sort-asc','sort-desc'));
+            th.classList.add(asc?'sort-asc':'sort-desc');
+            tbody.querySelectorAll('.top20-detail').forEach(r=>r.remove());
+            const rows=[...tbody.querySelectorAll('tr')];
+            rows.sort((a,b)=>{
+              const av=parseFloat(a.dataset[key])||0,bv=parseFloat(b.dataset[key])||0;
+              return asc?av-bv:bv-av;
+            });
+            rows.forEach(r=>tbody.appendChild(r));
+          });
+        });
+      }
+
       setupTop20(hevTbody);
+      setupSort(document.getElementById('top30-table'));
       renderComparison();
     })();
   </script>
